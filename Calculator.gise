@@ -21,8 +21,99 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Calculator.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="adder1bit.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="adder1bit.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="adder1bit.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="adder1bit.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="adder1bit.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="adder1bit.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="adder1bit.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="adder1bit.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="adder1bit.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="adder1bit.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="adder1bit_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="adder1bit_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adder1bit_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="adder1bit_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adder1bit_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1477488418" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1477488417">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477488418" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5749134038929814957" xil_pn:start_ts="1477488418">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477488418" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2328554175358051820" xil_pn:start_ts="1477488418">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477488418" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1477488418">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477488418" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-6366908082572346201" xil_pn:start_ts="1477488418">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477488418" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5702940744460053484" xil_pn:start_ts="1477488418">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477488418" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6457411401048496222" xil_pn:start_ts="1477488418">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477489049" xil_pn:in_ck="153349404600515956" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="1548310442537013502" xil_pn:start_ts="1477489010">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="adder1bit.lso"/>
+      <outfile xil_pn:name="adder1bit.ngc"/>
+      <outfile xil_pn:name="adder1bit.ngr"/>
+      <outfile xil_pn:name="adder1bit.prj"/>
+      <outfile xil_pn:name="adder1bit.stx"/>
+      <outfile xil_pn:name="adder1bit.syr"/>
+      <outfile xil_pn:name="adder1bit.xst"/>
+      <outfile xil_pn:name="adder1bit_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1477488431" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119214201249317678" xil_pn:start_ts="1477488431">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477488630" xil_pn:in_ck="976804946575906326" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8583869941043615154" xil_pn:start_ts="1477488618">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="adder1bit.bld"/>
+      <outfile xil_pn:name="adder1bit.ngd"/>
+      <outfile xil_pn:name="adder1bit_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1477488644" xil_pn:in_ck="976804946575906327" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="3373610943407121171" xil_pn:start_ts="1477488630">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="adder1bit_map.map"/>
+      <outfile xil_pn:name="adder1bit_map.mrp"/>
+    </transform>
+  </transforms>
 
 </generated_project>
