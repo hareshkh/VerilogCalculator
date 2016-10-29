@@ -50,6 +50,7 @@ module alu8bit(
 	adder8bit x1(oper1, oper2, addans, c, o);
 	and8bit   x2(oper1, oper2, andans);
 	xor8bit   x3(oper1, oper2, xorans);
+	mul8bit   x4(oper1, oper2, mulans);
 
 // Checking and assigning the correct result according to opcode
 	assign out = (opcode == 2'b00) ? ((o == 1'b0)? addans : 8'b0) :

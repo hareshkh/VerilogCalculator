@@ -8,9 +8,9 @@
  */
 
 module and8bit(
-    input [7:0] a,
-    input [7:0] b,
-    output [7:0] out
+    input wire [7:0] a,
+    input wire[7:0] b,
+    output wire [7:0] out
     );
 
 	assign out[0] = a[0] & b[0];

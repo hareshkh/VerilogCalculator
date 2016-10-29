@@ -3,16 +3,16 @@
 /*
  * Group_ID-61 (15114031_15114032) - Haresh Khanna & Harjot Singh Oberai
  * Date: October 25, 2016
- * adder1bit.v
+ * adder8bit.v
  *
  */
  
 module adder8bit(
-    input [7:0] a,
-    input [7:0] b,
-    output [7:0] sum,
-    output carry,
-	 output overflow
+    input wire [7:0] a,
+    input wire [7:0] b,
+    output wire [7:0] sum,
+    output wire carry,
+	 output wire overflow
     );
 
 // Initial carry and 7 ripple wires.
@@ -36,4 +36,5 @@ module adder8bit(
 	adder1bit a7( .a(a[7]), .b(b[7]), .cin(ripple6), .sum(sum[7]), .cout(carry) );
 	
 	or overflow_detect(overflow, carry, ripple6);
+
 endmodule
