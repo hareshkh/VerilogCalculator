@@ -11,10 +11,19 @@ module adder8bit(
     input [7:0] a,
     input [7:0] b,
     output [7:0] sum,
-    output carry
+    output carry,
+	 output overflow
     );
 
+// Initial carry and 7 ripple wires.
 	wire cin;
+	wire ripple0;
+	wire ripple1;
+	wire ripple2;
+	wire ripple3;
+	wire ripple4;
+	wire ripple5;
+	wire ripple6;
 	assign cin = 1'b0;
 	
 	adder1bit a0( .a(a[0]), .b(b[0]), .cin(cin),     .sum(sum[0]), .cout(ripple0) );
@@ -25,5 +34,6 @@ module adder8bit(
 	adder1bit a5( .a(a[5]), .b(b[5]), .cin(ripple4), .sum(sum[5]), .cout(ripple5) );
 	adder1bit a6( .a(a[6]), .b(b[6]), .cin(ripple5), .sum(sum[6]), .cout(ripple6) );
 	adder1bit a7( .a(a[7]), .b(b[7]), .cin(ripple6), .sum(sum[7]), .cout(carry) );
-
+	
+	or overflow_detect(overflow, carry, ripple6);
 endmodule
