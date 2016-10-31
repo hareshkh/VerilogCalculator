@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Haresh/Calculator/test_alu8bit_isim_beh.exe" -prj "C:/Users/Haresh/Calculator/test_alu8bit_beh.prj" "work.test_alu8bit" "work.glbl" 
