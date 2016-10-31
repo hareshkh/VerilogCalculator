@@ -50,15 +50,31 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="adder8bit.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="adder8bit.xst"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adder8bit_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="alu8bit.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="alu8bit.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="alu8bit.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="alu8bit.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="alu8bit.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="alu8bit.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu8bit.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu8bit.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="alu8bit.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="alu8bit.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="alu8bit_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="alu8bit_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="alu8bit_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="alu8bit_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="alu8bit_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="alu8bit_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="and8bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="and8bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="and8bit.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mul8bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mul8bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="mul8bit.xst"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/alu8bit_synthesis.nlf"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/alu8bit_synthesis.v"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="register.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="register.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register.prj"/>
@@ -68,6 +84,9 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="register_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="xor8bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="xor8bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="xor8bit.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -100,7 +119,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477754338" xil_pn:in_ck="-2997438239987529129" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2620676597264302343" xil_pn:start_ts="1477754304">
+    <transform xil_pn:end_ts="1477894487" xil_pn:in_ck="-2997438239987529129" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2620676597264302343" xil_pn:start_ts="1477894455">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -115,6 +134,38 @@
       <outfile xil_pn:name="alu8bit_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1477894388" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981259585024347" xil_pn:start_ts="1477894388">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477894430" xil_pn:in_ck="153742669139623839" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6082289932669921445" xil_pn:start_ts="1477894420">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="alu8bit.bld"/>
+      <outfile xil_pn:name="alu8bit.ngd"/>
+      <outfile xil_pn:name="alu8bit_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1477894442" xil_pn:in_ck="153742669139623840" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="3373610943407121171" xil_pn:start_ts="1477894430">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="alu8bit_map.map"/>
+      <outfile xil_pn:name="alu8bit_map.mrp"/>
+    </transform>
+    <transform xil_pn:end_ts="1477894392" xil_pn:in_ck="153742669139623839" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-8512194188041890451" xil_pn:start_ts="1477894388">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/synthesis/alu8bit_synthesis.nlf"/>
+      <outfile xil_pn:name="netgen/synthesis/alu8bit_synthesis.v"/>
     </transform>
   </transforms>
 
