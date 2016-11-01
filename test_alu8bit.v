@@ -11,7 +11,6 @@ module test_alu8bit;
 
 	// Inputs
 	reg [17:0] instruction;
-	reg clk;
 
 	// Outputs
 	wire [7:0] out;
@@ -22,29 +21,27 @@ module test_alu8bit;
 	// Instantiate the Unit Under Test (UUT)
 	alu8bit uut (
 		.instruction(instruction), 
-		.clk(clk), 
 		.out(out), 
 		.extended_out(extended_out), 
 		.overflow(overflow), 
 		.carry(carry)
 	);
-
-	always begin
-		#5 clk = 0;
-		#5 clk = 1;
-	end
+	
 	initial begin
 		// Initialize Inputs
 		instruction = 0;
-
-		// Wait 100 ns for global reset to finish
-		#100;
-        
-		// stimulus here
-		instruction = 18'b000000000100000001;
+		
+		#100
+		
+		//Instructions :
+		// add 00000001 00000111
+		instruction = 18'b000000000100000111;
+		// and 00010100 00001111
 		#100 instruction = 18'b010001010000001111;
-		#100 instruction = 18'b110000001100000011;
-
+		// mul 00000011 00000111
+		#100 instruction = 18'b110000001100000111;
+		// xor 00001111 11110000
+		#100 instruction = 18'b100000111111110000;
 	end
       
 endmodule
